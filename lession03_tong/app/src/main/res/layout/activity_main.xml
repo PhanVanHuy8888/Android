@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnTinh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nhập dãy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="440dp"
+        android:text="Tính"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtKQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="500dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Kết quả"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="108dp"
+        android:text="Nhập"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="274dp"
+        android:layout_height="186dp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="203dp">
+
+        <RadioButton
+            android:id="@+id/rdDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In dãy" />
+
+        <RadioButton
+            android:id="@+id/rdTong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tính tổng" />
+
+        <RadioButton
+            android:id="@+id/rdTBC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tính trung bình cộng" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
